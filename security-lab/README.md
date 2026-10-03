@@ -8,3 +8,8 @@ Expected repo-level detections:
 - Missing Supabase Row-Level Security (RLS)
 
 All credentials in the fixtures are fake test values.
+
+
+## Semgrep static-analysis fixture
+
+`semgrep-test.py` is intentionally insecure and non-production. It contains a simple SQL query built from untrusted input so the scanner can exercise its Semgrep security rules. Do not import or deploy this fixture.
